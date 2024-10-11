@@ -1,16 +1,23 @@
-import React, {useContext} from "react"; 
-import UserContext from "./UserContext"
+import React, { useContext } from "react";
 
-const UserProfile = () =>{
+import UserContext from './UserContext'
+const UserProfile = () => {
     const user = useContext(UserContext)
 
     return(
         <div>
-            <h1>User Profile</h1>
-            <p>Name: {user.name}</p>
-            <p>Age: {user.age}</p>
+            <p>User Profile</p>
+            <h1>User: {user.name}</h1>
+            <h1>Age: {user.age}</h1>
         </div>
     )
+
 }
 
 export default UserProfile
+
+
+
+
+
+
